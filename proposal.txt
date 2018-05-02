@@ -1,0 +1,18 @@
+Proposal #1:
+
+    A website much like Galvanize Delivers, but butcher themed. This site would solve the issue of not being able to get meat, enough meat, and the right kinds of meat, which, I think we can all agree is a troubling and widespread issue.
+
+    The target user is carnivorous, alive, hungry, lazy, with a sense of humor. I would also like to weave a survivalistic theme into the design. Survivalists are hip; I mean, the end is Nigh!!!
+
+    I would be using html, css, likely Materialize, and vanilla Javascript. Functionality will include (hopefully), two pages linked via meat icon and navbar, an interactive butcher map of a pig which sends items(i.e. pork loins) to the shopping cart, animal noises on icon click, and client side validation in the shape of an order form.
+
+
+Proposals #2:
+
+    My secondary idea is to make a simple and silly quiz game like the Your Spirit Grilled Cheese site I found online. I don't quite yet know about the theme, though maybe conspiracy theories could factor in somehow in sticking with a survivalist vibe.
+
+    It would solve the need to be entertained, to giggle.
+
+    The target user is someone who is curious, perhaps bored, and likes to laugh.
+
+    The technologies would be html, css, Materialize or grid, Javascript. 
