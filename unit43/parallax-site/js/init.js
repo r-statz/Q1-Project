@@ -6,13 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let loin = document.getElementById("loin")
   let belly = document.getElementById("belly")
   let ham = document.getElementById("ham")
-
-//audio on 'PORK' click
-// function play(){
-//       event.preventDefault();
-//        var audio = document.getElementById("squeal");
-//        audio.play();
-//                  }
+  
 //loin events
     loin.onmouseover = function() {
       document.getElementById('popup').style.display = 'block';
