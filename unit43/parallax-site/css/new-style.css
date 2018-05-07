@@ -1,0 +1,63 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ h1 {
+   color: white;
+   font-family: "Berkshire Swash";
+   font-size: 7em;
+
+}
+
+#logo {
+  height: 8em;
+  width: 15em;
+}
+
+#nav-link {
+  font-family: "Open sans";
+}
+#index-banner {
+  background-image: url("../img/new-background.svg");
+  background-size: cover;
+  height: 550px;
+
+}
+#price-per-lb {
+  font-size: 3em;
+  font-family: "Stardos Stencil";
+  padding-top: 2em;
+}
+
+
+#survivalist {
+  font-family: "Stardos Stencil";
+  color: #e53935;
+}
+#sodhoff {
+  font-family: cursive;
+  color: #fdd835;
+}
+.icon-block p {
+  font-family: "Open sans";
+}
+.icon-block h2 {
+  padding-top: 1em;
+  font-family: "Berkshire Swash";
+
+  font-size: 2.5em;
+}
+.icon-block a {
+  color: #fdd835;
+}
+.icon-block {
+
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
