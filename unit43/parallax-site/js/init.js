@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let loin = document.getElementById("loin")
   let belly = document.getElementById("belly")
   let ham = document.getElementById("ham")
-  
+
 //loin events
     loin.onmouseover = function() {
       document.getElementById('popup').style.display = 'block';
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('popup').style.display = 'none';
     }
     loin.addEventListener('click', function(e) {
-      console.log("clicked on loin")
+
     });
 
 //spareRib events
@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('popup').style.display = 'none';
     }
     spareRib.addEventListener('click', function(e) {
-    console.log("how much for one rib?")
+
   });
 
 //blade events
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
       document.getElementById('popup').style.display = 'none';
     }
     blade.addEventListener('click', function(e) {
-    console.log("clicked on blade");
+
     });
 
 
@@ -54,7 +54,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('popup').style.display = 'none';
     }
     shoulder.addEventListener('click', function(e) {
-    console.log("clicked on shoulder");
 
   });
 
@@ -68,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('popup').style.display = 'none';
     }
     belly.addEventListener('click', function(e) {
-    console.log("clicked on belly");
+
   });
 
 
@@ -81,7 +80,6 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('popup').style.display = 'none';
     }
     ham.addEventListener('click', function(e) {
-    console.log("clicked on hambone");
 
   });
 
