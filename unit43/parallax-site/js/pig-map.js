@@ -10,7 +10,10 @@ oink.addEventListener('click', function(e) {
   setTimeout(function() {
     document.location.href = 'pig-map.html'
   }, 2500)
+
+
+  
 })
 
-let moo =  document.getElementsById("")
-});
+// let moo =  document.getElementsById("")
+// });

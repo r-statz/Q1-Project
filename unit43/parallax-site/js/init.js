@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let loin = document.getElementById("loin")
   let belly = document.getElementById("belly")
   let ham = document.getElementById("ham")
+  let badge = document.getElementById("badge")
 
 //loin events
     loin.onmouseover = function() {
@@ -16,8 +17,17 @@ document.addEventListener('DOMContentLoaded', function () {
     loin.onmouseout = function() {
       document.getElementById('popup').style.display = 'none';
     }
-    loin.addEventListener('click', function(e) {
 
+
+    ;
+    let count = 1;
+    loin.addEventListener('click', function() {
+
+      let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
+      count++;
+      console.log(count)
+      badge.innerHTML = badgeHtml
+      console.log("porks")
     });
 
 //spareRib events
