@@ -1,9 +1,12 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-$.getJSON( "cart.json", function( data ) {
-
+$(document).ready(function() {
+  $('.sidenav').sidenav();
+  $.getJSON("js/cart.json", function(data) {
+    console.log("howdy")
 
   });
+
+
   let spareRib = document.getElementById("spare-rib")
   let blade = document.getElementById("blade")
   let shoulder = document.getElementById("shoulder")
@@ -22,7 +25,7 @@ $.getJSON( "cart.json", function( data ) {
     }
 
 
-
+// console.log("howdy");
 
     loin.addEventListener('click', function() {
 
@@ -119,16 +122,4 @@ $.getJSON( "cart.json", function( data ) {
       console.log("hambones")
   });
 
-
-
-
 });
-
-(function($){
-  $(function(){
-
-    $('.sidenav').sidenav();
-    $('.parallax').parallax();
-
-  }); // end of document ready
-})(jQuery); // end of jQuery name space
