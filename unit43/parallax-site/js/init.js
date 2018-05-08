@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function () {
 
   let spareRib = document.getElementById("spare-rib")
