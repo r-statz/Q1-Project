@@ -1,6 +1,9 @@
 
 document.addEventListener('DOMContentLoaded', function () {
+$.getJSON( "cart.json", function( data ) {
 
+
+  });
   let spareRib = document.getElementById("spare-rib")
   let blade = document.getElementById("blade")
   let shoulder = document.getElementById("shoulder")
@@ -8,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
   let belly = document.getElementById("belly")
   let ham = document.getElementById("ham")
   let badge = document.getElementById("badge")
-
+  let count = 1;
 //loin events
     loin.onmouseover = function() {
       document.getElementById('popup').style.display = 'block';
@@ -19,15 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    ;
-    let count = 1;
+
+
     loin.addEventListener('click', function() {
 
       let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
       count++;
-      console.log(count)
+
       badge.innerHTML = badgeHtml
       console.log("porks")
+
+
     });
 
 //spareRib events
@@ -38,8 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
     spareRib.onmouseout = function() {
       document.getElementById('popup').style.display = 'none';
     }
-    spareRib.addEventListener('click', function(e) {
+    spareRib.addEventListener('click', function() {
+      let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
+      count++;
 
+      badge.innerHTML = badgeHtml
+      console.log("spare ribs")
   });
 
 //blade events
@@ -51,8 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
     blade.onmouseout = function() {
       document.getElementById('popup').style.display = 'none';
     }
-    blade.addEventListener('click', function(e) {
+    blade.addEventListener('click', function() {
+      let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
+      count++;
 
+      badge.innerHTML = badgeHtml
+      console.log("blade")
     });
 
 
@@ -65,7 +78,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('popup').style.display = 'none';
     }
     shoulder.addEventListener('click', function(e) {
+      let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
+      count++;
 
+      badge.innerHTML = badgeHtml
+      console.log("shoulder")
   });
 
 
@@ -78,7 +95,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('popup').style.display = 'none';
     }
     belly.addEventListener('click', function(e) {
+      let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
+      count++;
 
+      badge.innerHTML = badgeHtml
+      console.log("belly")
   });
 
 
@@ -91,7 +112,11 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('popup').style.display = 'none';
     }
     ham.addEventListener('click', function(e) {
+      let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
+      count++;
 
+      badge.innerHTML = badgeHtml
+      console.log("hambones")
   });
 
 
