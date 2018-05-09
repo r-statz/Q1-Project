@@ -38,17 +38,30 @@ let cuts = {
 $(document).ready(function(){
     $('.sidenav').sidenav();
 
-    let loinHtml =
-    `<td>wards</td>
-    <td>wards</td>
-    <td>wards</td>
-    `
-    let checkout = document.getElementById("checkout")
-    // console.log(checkout)
-    let item = document.createElement("tr")
-    item.innerHTML = loinHtml
+    let local = [];
+     for (let i = 0; i < localStorage.length; ++i ) {
+       local.push(JSON.parse(localStorage.getItem(localStorage.key(i))))
+       let one = local[i].name
+       let two = local[i].count
+       let three = local[i].price
 
-    checkout.appendChild(item)
+       let loinHtml =`<td>${one}</td><td>${two}</td><td>${three}</td>`
 
-    console.log(localStorage.getItem("loin"))
+       let checkout = document.getElementById("checkout")
+       let item = document.createElement("tr")
+       item.innerHTML = loinHtml
+       checkout.appendChild(item)
+
+
+       console.log(one, two, three)
+// console.log(local[i].count)
+// console.log(local[i].price)
+     }
+
+
+  
+
+
+
+
 })

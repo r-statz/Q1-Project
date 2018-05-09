@@ -40,8 +40,6 @@ let cuts = {
 $(document).ready(function() {
   $('.sidenav').sidenav();
 
-  console.log(cuts)
-
   let spareRib = document.getElementById("spare-rib")
   let blade = document.getElementById("blade")
   let shoulder = document.getElementById("shoulder")
@@ -105,12 +103,10 @@ $(document).ready(function() {
     blade.addEventListener('click', function() {
       let badgeHtml = `<span class="badge" id="#badge">${count}</span>`
       count++;
-
       badge.innerHTML = badgeHtml
 
       cuts.blade.count++
-
-     localStorage.setItem("blade", JSON.stringify(cuts.blade))
+      localStorage.setItem("blade", JSON.stringify(cuts.blade))
     });
 
 
