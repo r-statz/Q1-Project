@@ -7,10 +7,30 @@
   font-family: "Stardos Stencil";
 }
 
-#download-button {
+.order {
+  margin: auto;
+  padding:10em;
+  height: 50em;;
+}
+
+.button {
+  padding: 3em;
+}
+
+#submit {
+
   background-color: #e53935;
 }
 
 #main{
+  font-family: "open Sans";
   padding-bottom: 25em;
+  padding-top: 10em;
+}
+#main h3 {
+  font-family: "Stardos Stencil";
+}
+
+.icon-block .material-icons {
+	font-size: inherit;
 }

@@ -1,10 +1,10 @@
-document.addEventListener('DOMContentLoaded', function () {
+$(document).ready(function() {
 
 let oink = document.getElementById("oink");
 
 oink.addEventListener('click', function(e) {
   e.preventDefault();
-  var audio = new Audio("../audio/pig.mp3")
+  var audio = new Audio("pig.mp3")
   audio.play()
 
   setTimeout(function() {
@@ -15,5 +15,6 @@ oink.addEventListener('click', function(e) {
 
 })
 
-// let moo =  document.getElementsById("")
+
+  $('.sidenav').sidenav();
  });

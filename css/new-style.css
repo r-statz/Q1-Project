@@ -1,12 +1,4 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
- h1 {
+h1 {
    color: white;
    font-family: "Berkshire Swash";
    font-size: 7em;
@@ -32,10 +24,10 @@
   height: 550px;
 
 }
-#price-per-lb {
+#popup {
   font-size: 3em;
   font-family: "Stardos Stencil";
-  padding-top: 1em;
+  padding-top: em;
 }
 
 
@@ -60,7 +52,6 @@
   color: #fdd835;
 }
 .icon-block {
-
   padding: 0 15px;
 }
 .icon-block .material-icons {
