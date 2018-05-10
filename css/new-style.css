@@ -4,10 +4,13 @@ h1 {
    font-size: 7em;
 
 }
-
+/*footer {
+  height: 20em;
+}*/
 
 #map{
-
+padding-top: 15em;
+padding-bottom: 5em;
 }
 
 #logo {

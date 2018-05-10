@@ -39,11 +39,13 @@ $(document).ready(function(){
     $('.sidenav').sidenav();
 
     let local = [];
+    let total = 0;
      for (let i = 0; i < localStorage.length; ++i ) {
        local.push(JSON.parse(localStorage.getItem(localStorage.key(i))))
        let one = local[i].name
        let two = local[i].count
        let three = local[i].price
+       total+= (two * three)
 
        let loinHtml =`<td>${one}</td><td>${two}</td><td>${three}</td>`
 
@@ -51,17 +53,22 @@ $(document).ready(function(){
        let item = document.createElement("tr")
        item.innerHTML = loinHtml
        checkout.appendChild(item)
-
-
-       console.log(one, two, three)
-// console.log(local[i].count)
-// console.log(local[i].price)
      }
 
+     let cost = document.getElementById("cost")
+     let totalSubmit = document.getElementById("total-submit")
 
-  
+     totalSubmit.addEventListener('click', function() {
 
+       cost.innerHTML = "$" + total.toFixed(2)
+     })
 
+     let clearButton = document.getElementById("clear-button")
 
+     clearButton.addEventListener('click', function() {
 
+       localStorage.clear();
+       checkout.innerHTML = ""
+       cost.innerHTML = ""
+     })
 })

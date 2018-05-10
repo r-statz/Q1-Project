@@ -16,6 +16,13 @@
 .button {
   padding: 3em;
 }
+#clear-button {
+  background-color: #e53935;
+}
+
+#total-submit {
+  background-color: #e53935;
+}
 
 #submit {
 
@@ -24,7 +31,7 @@
 
 #main{
   font-family: "open Sans";
-  padding-bottom: 25em;
+  padding-bottom: 14em;
   padding-top: 10em;
 }
 #main h3 {
