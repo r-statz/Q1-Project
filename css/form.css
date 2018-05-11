@@ -1,6 +1,13 @@
+/*body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }*/
+
+
 #logo {
-  height: 5em;
-  width: 8em;
+  height: 7em;
+  width: 10em;
 }
 
 .footer-text {
@@ -9,9 +16,10 @@
 
 .order {
   margin: auto;
-  padding:10em;
-  height: 50em;;
+  padding:8em;
+  height: 46em;
 }
+
 
 .button {
   padding: 3em;
@@ -34,6 +42,8 @@
   padding-bottom: 14em;
   padding-top: 10em;
 }
+
+
 #main h3 {
   font-family: "Stardos Stencil";
 }
