@@ -41,28 +41,28 @@
 <div class="container" id="main">
   <h3>Client side validation</h3>
 
-    <form>
+    <form action="https://formspree.io/robinstatz@gmail.com" method"POST">
       <div class="row">
         <div class="input-field col s12">
-          <input id="last_name" type="text" required>
+          <input id="last_name" name="name" type="text" required>
           <label for="last_name">Name</label>
         </div>
       </div>
 
       <div class="row">
         <div class="input-field col s12">
-          <input id="phone-number" type="tel" required>
+          <input id="phone-number" name="name" type="tel" required>
           <label for="phone-number">Phone Number</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <input id="address" type="text" required>
+          <input id="address"  name="name" type="email" required>
           <label for="address">Address</label>
         </div>
       </div>
     </form>
-      <submit id="submit" class="btn-large ">SUBMIT</submit>
+      <button id="submit" type="submit"  class="btn-large ">SUBMIT</button>
     </div>
 
 
